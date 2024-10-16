@@ -1,0 +1,2 @@
+: *.c |> clang -c -g -Wall %f -o %o |> build/%B.o
+: build/*.o |> clang -g -lraylib -Wall %f -o %o |> build/fnaf_fangame

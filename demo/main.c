@@ -1,4 +1,5 @@
 #include <raylib.h>
+#include "dumblib.h"
 
 int main() {
     const int screenWidth = 640;
@@ -10,7 +11,7 @@ int main() {
     while (!WindowShouldClose()) {
         BeginDrawing();
             ClearBackground(RAYWHITE); 
-            DrawText("Congat!", 20, 20, 24, BLACK);
+            DrawText(text, 20, 20, 24, BLACK);
         EndDrawing();
     }
 

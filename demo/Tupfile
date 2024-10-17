@@ -1,0 +1,3 @@
+CFLAGS += -Wall
+
+: foreach *.c |> clang $(CFLAGS) -c %f -o %o |> ../build/demo/%B.o

@@ -1,0 +1,4 @@
+CFLAGS += -Wall
+CFLAGS += -lraylib
+
+: build/*.o |> clang %f $(CFLAGS) -o %o |> fnaf_fangame

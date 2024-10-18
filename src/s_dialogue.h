@@ -6,4 +6,4 @@ void dialogue_update();
 void dialogue_draw();
 void dialogue_deinit();
 
-GameState s_dialogue;
+extern GameState s_dialogue;

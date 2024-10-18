@@ -1,4 +1,4 @@
-CC=clang
+CC=clang-18
 CFLAGS=-Wall -g
 LIBS=-lraylib
 

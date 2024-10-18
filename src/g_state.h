@@ -8,4 +8,6 @@ typedef struct GameState {
     void (*state_draw)();
 } GameState;
 
-GameState g_state;
+extern GameState g_state;
+
+void g_state_switch(GameState new_state);

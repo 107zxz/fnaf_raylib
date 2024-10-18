@@ -1,7 +1,9 @@
 #pragma once
 #include "r_text.h"
 
-char DIA_INTRO_TEXT[][DBOX_CAPACITY] = {
+#define DIA_INTRO_N 9
+
+char DIA_INTRO_TEXT[DIA_INTRO_N][DBOX_CAPACITY] = {
     "=CONTROLS=\n\n" \
     "[Z]\n-Confirm\n-Progress Text\n\n" \
     "[X]\n-Cancel\n-Skip Text",

@@ -6,4 +6,6 @@ void r_window_init()
 {
     InitWindow(R_WIN_DEFAULT_WIDTH, R_WIN_DEFAULT_HEIGHT, g_state.window_title);
     SetTargetFPS(60);
+
+    SetWindowState(FLAG_WINDOW_RESIZABLE);
 }

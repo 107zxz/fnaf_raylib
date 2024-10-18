@@ -6,10 +6,11 @@
 #include "r_text.h"
 #include <raylib.h>
 
-GameState s_dialogue = {.window_title = "Hello, World!",
+GameState s_dialogue = {.window_title = "Your quest begins here...",
                         .state_init = dialogue_init,
                         .state_update = dialogue_update,
                         .state_draw = dialogue_draw,
+                        .state_draw_raw = dialogue_draw_raw,
                         .state_deinit = dialogue_deinit};
 
 static int current_line = 0;
@@ -41,4 +42,9 @@ void dialogue_update()
 void dialogue_draw()
 {
   r_text_typewriter_draw(GetFrameTime());
+}
+
+void dialogue_draw_raw()
+{
+
 }

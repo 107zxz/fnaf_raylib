@@ -4,16 +4,17 @@
 #define DIA_INTRO_N 9
 
 char DIA_INTRO_TEXT[DIA_INTRO_N][DBOX_CAPACITY] = {
+    "IMPOSSIBLE GAME\n\n" \
     "=CONTROLS=\n\n" \
     "[Z]\n-Confirm\n-Progress Text\n\n" \
     "[X]\n-Cancel\n-Skip Text",
 
-    "Hey.",
-    "What's up?",
-    "Are you looking for an adventure?     \nI hope so!",
-    "Let's start.",
+    "You are the most powerful League of Legends player in the entire world.",
+    "After many years of challenges, you have come out on top against every opponent.",
     "...",
-    "It is November 1st, 2077...",
-    "but not just any 2077...",
-    "CYBERPUNK 2077"
+    "However, even after all you have faced, one challenge has surpassed you.",
+    "ONE demand has proved impossible year after year.",
+    "...",
+    "It is time for you to face your demons.",
+    "You clutch your MONSTER(tm) energy drink and proceed into the harsh light..."
 };

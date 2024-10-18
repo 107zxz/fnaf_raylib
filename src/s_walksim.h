@@ -4,8 +4,9 @@
 void walksim_init();
 void walksim_update();
 void walksim_draw();
+void walksim_draw_raw();
 void walksim_deinit();
 
-#define WALK_SPEED 25
+#define WALK_SPEED 5
 
 extern GameState s_walksim;

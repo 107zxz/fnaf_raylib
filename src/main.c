@@ -6,6 +6,7 @@
 #include "s_dialogue.h"
 #include "d_colours.h"
 #include "s_walksim.h"
+#include "s_grass.h"
 
 void load_plugins() {
   r_window_init();
@@ -13,7 +14,7 @@ void load_plugins() {
 }
 
 int main() {
-  g_state = s_walksim;
+  g_state = s_dialogue;
 
   load_plugins();
 
@@ -33,13 +34,16 @@ int main() {
     BeginDrawing();
     ClearBackground(BLACK);
     DrawTexturePro(
-		   target.texture,
-		   (Rectangle){0.0, 0.0, GB_WIDTH, -GB_HEIGHT},
-		   (Rectangle){R_WIN_GAME_OFFSET_X, R_WIN_GAME_OFFSET_Y, R_WIN_GAME_WIDTH, R_WIN_GAME_HEIGHT},
-		   (Vector2){0.0, 0.0},
-		   0.0f,
-		   WHITE
-		   );
+      target.texture,
+      (Rectangle){0.0, 0.0, GB_WIDTH, -GB_HEIGHT},
+      (Rectangle){R_WIN_GAME_OFFSET_X, R_WIN_GAME_OFFSET_Y, R_WIN_GAME_WIDTH, R_WIN_GAME_HEIGHT},
+      (Vector2){0.0, 0.0},
+      0.0f,
+      WHITE
+    );
+
+    g_state.state_draw_raw();
+
     EndDrawing();
   }
 

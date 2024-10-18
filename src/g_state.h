@@ -6,6 +6,7 @@ typedef struct GameState {
     void (*state_deinit)();
     void (*state_update)();
     void (*state_draw)();
+    void (*state_draw_raw)();
 } GameState;
 
 extern GameState g_state;

@@ -1,3 +1,0 @@
-CFLAGS += -Wall -g2
-
-: foreach *.c |> clang $(CFLAGS) -o %o -c %f |> %B.o

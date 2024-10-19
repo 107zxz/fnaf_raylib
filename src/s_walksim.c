@@ -23,7 +23,7 @@ void walksim_deinit() {
 }
 
 void walksim_update() {
-    if (IsKeyDown(KEY_UP))
+    if (g_input_forward())
       progress += GetFrameTime() * WALK_SPEED;
 
     if (progress > 40 * WALK_SPEED) {

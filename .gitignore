@@ -5,3 +5,7 @@ build/
 .DS_Store
 fnaf_fangame
 *.dSYM/
+raylib
+html5
+emsdk
+game.zip

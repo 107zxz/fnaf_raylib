@@ -14,5 +14,12 @@
 #define R_WIN_GAME_OFFSET_X ((GetScreenWidth() - R_WIN_GAME_WIDTH) / 2)
 #define R_WIN_GAME_OFFSET_Y ((GetScreenHeight() - R_WIN_GAME_HEIGHT) / 2)
 
+#define R_WIN_DEFAULT_WIDTH 720
+#define R_WIN_DEFAULT_HEIGHT 720
+#define R_WIN_GAME_WIDTH 720
+#define R_WIN_GAME_HEIGHT 720
+#define R_WIN_GAME_OFFSET_X 0
+#define R_WIN_GAME_OFFSET_Y 0
+
 void r_window_init();
 void r_window_draw();

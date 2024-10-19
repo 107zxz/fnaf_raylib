@@ -20,6 +20,7 @@ void dialogue_init()
   current_line = 0;
   r_text_init();
   r_text_typewriter_set(DIA_INTRO_TEXT[0], 25.f, COL2);
+  SetTextLineSpacing(2);
 }
 
 void dialogue_deinit()
